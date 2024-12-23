@@ -84,14 +84,14 @@ The `terraform/` directory includes configurations to provision the following AW
 - Identifies S3 buckets with public access and removes permissions if detected.
 - **Usage**:
   ```bash
-  python scripts/s3.py
+  python scripts/s3.py --bucket-name <s3_bucket_name>
   ```
 
 ### **2. rds.py**
 - Verifies RDS instances for public accessibility and disables it if found.
 - **Usage**:
   ```bash
-  python scripts/rds.py
+  python scripts/rds.py --db-instance-identifier <rds_instancedb_identifier_name>
   ```
 
 ### **3. ec2_ssm_policy.py**

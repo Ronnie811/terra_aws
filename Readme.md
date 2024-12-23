@@ -162,6 +162,31 @@ Contributions are welcome! Follow these steps:
 
 ---
 
-## **License**
+## **Code Quality**
 
-This project is licensed under the MIT License.
+This project maintains high code quality standards by using [flake8](https://flake8.pycqa.org/en/latest/). Flake8 is a tool that checks the code for compliance with PEP 8 style guidelines and identifies potential errors.
+
+### Files Evaluated with flake8
+
+The following files have been analyzed using black and flake8 to ensure they adhere to coding standards:
+
+- `s3.py`
+- `rds.py`
+- `ec2_ssm_policy.py`
+- `test_s3.py`
+- `test_rds.py`
+- `test_ec2_ssm_policy.py`
+
+### Running flake8
+
+To run flake8 on all files in the project, execute the following command:
+
+```bash
+flake8 scripts/s3.py
+flake8 scripts/rds.py
+flake8 scripts/ec2_ssm_policy.py
+flake8 test/test_s3.py
+flake8 test/test_rds.py
+flake8 test/test_ec2_ssm_policy.py
+
+---

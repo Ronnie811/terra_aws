@@ -1,12 +1,12 @@
 import pytest
 from scripts.ec2_ssm_policy import remove_ssm_policy_from_ec2
-from moto import mock_ec2, mock_iam
+from moto import mock_aws
 import boto3
 
 
 @pytest.fixture
 def ec2_setup():
-    with mock_ec2(), mock_iam():
+    with mock_aws():
         ec2 = boto3.client("ec2")
         iam = boto3.client("iam")
 
